@@ -1,4 +1,4 @@
-1027. Longest Arithmetic Subsequence
+
 class Solution:
     def longestArithSeqLength(self, nums: List[int]) -> int:
         seqs = {}
