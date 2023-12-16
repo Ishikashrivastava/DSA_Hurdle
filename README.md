@@ -1,4 +1,4 @@
-# DSA journey: ft innovation, and the realization of My fullest potential
+# DSA journey: ft innovation, and the realization of My fullest potential.
 
 Embarking on the journey of learning Data Structures and Algorithms (DSA) signifies an exciting chapter in my quest for continual growth and skill enhancement. With an unwavering determination, I stand at the threshold of this transformative expedition, eager to grasp the intricacies of DSA concepts that underpin the backbone of modern technological innovations.
 
