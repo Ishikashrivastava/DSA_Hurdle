@@ -4,28 +4,39 @@ class Solution
     public int minNumber(int arr[], int N)
     {
         int sum = 0;
-        int ans = 0; 
-        for(int n : arr){
-            sum+=n;
-            
+        for(int i=0;i<N;i++){
+            sum += arr[i];
         }
-        while(!isprime(sum)){
-            sum++;
-            ans++;
+        if(sum==1){
+            return 1;
         }
-        return ans;
+        boolean flag = isPrime(sum);
+        int min = 0;
+        if(flag==true){
+            return 0;
+        }else{
+           for(int j = 1; j<=Integer.MAX_VALUE/2;j++){
+               if(isPrime(sum+j)){
+                   return j;
+               }
+           } 
+        }
         
-
-    }
-    
-    public boolean isprime(int n){
-    for(int i =2;i*i<=n;i++){
-        if(n%i==0){
-            return false;
+        return 0;
+        
+    }  
+    public boolean isPrime(int num){
+        boolean flag = true;
+        for(int i=2;i<=num/2;i++){
+            if(num%i==0){
+                flag = false;
+                break;
+            }else{
+                flag = true;
+            }
         }
+        return flag;
     }
     
-    return true;
-
-    }
+            
 }
